@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    color: white;
+    background-color: #121212;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+hr{
+    border-width: 5px;
+    border-color: rgb(255, 255, 255);
+}
+
+
+
+nav {
+    background-color: #464646;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 10px;
+  }
+  
+  nav a:hover {
+    background-color: #fefefe;
+    border-radius: 10px;
+    color: black;
+  }
+  
+  .active a {
+    background-color: #000000;
+    color: #fff;
+    border-radius: 10px;
+  }
+  
+
+.AJB{
+    font-size: 55px;
+    font-style:oblique;
+    font-weight: bold;    
+}
+
+.Joshua-Headshot{
+    width: 150%;
+    height: 150%;
+    border-radius: 10%;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+}
+.small-about{
+   font-size: 30px;
+   padding-right: 5%;
+   padding-left: 14%;
+}
+.MAB-Text{
+    font-size: 50px;
+}
+.large-about{
+    font-size: 25px;
+    padding-right: 5%;
+}
+.SL{
+    font-size: 50px;
+}
+
+.Logo_YT{
+    width: 10%;
+    height: 10%;
+}
+.Logo_X{
+    width: 7%;
+    height: 7%;
+    border-radius: 15px;
+    margin-left: 1%;
+    border-style: solid;
+    border-color: white;
+}
+
+.button-container {
+    display: inline-block;
+    text-align: center;
+    margin: 0 10px; /* Adjust margin for desired spacing */
+  }
+
+.YT_Link{
+  color: white;
+}
+table {
+  margin-bottom: 20px; /* Adjust this value to control the gap size */
+  border-collapse: separate; /* Ensures spacing between cells */
+  border-spacing: 10px; /* Adds spacing between cells */
+}
+.MyFavVids{
+  text-decoration: underline;
+}
+.OtherPerFav{
+  text-decoration: underline;
+}
+.centered-iframe {
+  text-align: center;
+}
+.white-links{
+  color: white;
+}
