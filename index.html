@@ -6,69 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Joshua Branch</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon_io/favicon-32x32.png">
+    
 </head>
 <body>
-
   <nav>
     <ul>
       <li class="active"><a href="index.html">About Me</a></li>
       <li><a href="videos.html">Videos</a></li>
       <li><a href="projects.html">J's Projects</a></li>
       <li><a href="contact.html">Contact Me</a></li>
-    </ul>
+     </ul>
   </nav>
-  
 
-
-
-    <h1>
-        <p class="AJB">About Joshua Branch</p>
-    </h1>
-    <table>
-        <th class="TH_JB_HS">
-            <img src="Images/HeadShot.png" alt="Joshua_Headshot" class="Joshua-Headshot">
-        </th>
-        <th>
-            <p class="small-about">Hello, I am an 19 year old college freshman majoring in business. I live in the United States, but l would love to move up north. Some of my interests are food, cleaning, finance, and the most important one, technology. 
-            </p>
-        </th>
-    </table>
-   
-    <hr>
-    <h2>
+  <h1>
+    <p class="AJB">About Joshua Branch</p>
+  </h1>
+  <div class="About_Table">
+    <div class="TH_JB_HS">
+      <img src="Images/HeadShot.png" alt="Joshua_Headshot" class="Joshua-Headshot">
+    </div>
+    <div class="small-about">
+      <p>Hello, I am an 19 year old college freshman majoring in business. I live in the United States, but l would love to move up north. Some of my interests are food, cleaning, finance, and the most important one, technology. </p>
+    </div>
+  </div>
+    
+  <hr>
+  <h2>
         <p class="MAB-Text">More About Me</p>
+  </h2>
+    <p class="large-about">As a child, I enjoyed playing a variety of video games, including Minecraft, Roblox, and Fortnite. Around late 2016 or early 2017, I became interested in creating my own games. I started with Roblox Studio and later explored Unity, but I didn't find the success I was hoping for. I then took a break, had fun playing games, and even built a gaming YouTube channel for a while. However, I eventually discovered a passion for web development and learned to create websites using HTML and CSS. This interest later shifted to finance, and I briefly considered a career in accounting. Despite these changes, my enthusiasm for game development returned. I returned to creating games on Roblox, investing more time and effort into them with some more success. Although this phase was relatively short-lived, my interest in programming remained constant. In August of 2022, I reignited my passion for programming, and in early 2023, I re-discovered my love for business and entrepreneurship. Currently, I am focused on starting a business. 
+  </p>
+
+  <hr>
+
+  <section class="social-links">
+    <h2>
+      <p class="SL">Social Links</p>
     </h2>
-    <p class="large-about">As a child, I enjoyed playing a variety of video games, including Minecraft, Roblox, and Fortnite. Around late 2016 or early 2017, I became interested in creating my own games. I started with Roblox Studio and later explored Unity, but I didn't find the success I was hoping for. I then took a break, had fun playing games, and even built a gaming YouTube channel for a while. However, I eventually discovered a passion for web development and learned to create websites using HTML and CSS. This interest later shifted to finance, and I briefly considered a career in accounting. Despite these changes, my enthusiasm for game development returned. I returned to creating games on Roblox, investing more time and effort into them with some more success. Although this phase was relatively short-lived, my interest in programming remained constant. In August of 2022, I reignited my passion for programming, and in early 2023, I rediscovered my love for business and entrepreneurship. Currently, I am focused on starting a business. 
-    </p>
+    <a href="https://www.youtube.com/@JoshuaBranch" target="_blank">
+      <img src="Images/Logo_YouTube.png" alt="Joshua Branch on YouTube" class="Logo_YT">
+    </a>
 
-    <hr>
-
-    <section class="social-links">
-      <h2>
-        <p class="SL">Social Links</p>
-      </h2>
-      <a href="https://www.youtube.com/@JoshuaBranch" target="_blank">
-          <img src="Images/Logo_YouTube.png" alt="Joshua Branch on YouTube" class="Logo_YT">
-        </a>
-  
-        <a href="https://www.X.com/@TheJoshuaBranch" target="_blank">
-          <img src="Images/Logo_X.jpeg" alt="Joshua Branch on X" class="Logo_X">
-        </a>
-    </section>
+    <a href="https://www.X.com/@TheJoshuaBranch" target="_blank">
+      <img src="Images/Logo_X.jpeg" alt="Joshua Branch on X" class="Logo_X">
+    </a>
+  </section>
       
-    <br><br><br><br><br>
-    <footer>
-      <p id="lastUpdated">This page was last updated on: <span id="date"></span></p>
-      <script>
-        // Get today's date in the desired format
-        const today = new Date();
-        const formattedDate = today.toLocaleDateString('en-US', { year: 'numeric', month: '2-digit', day: '2-digit' });
-        
-        // Display the date in the designated span element
-        const dateElement = document.getElementById('date');
-        dateElement.textContent = formattedDate;
-        </script>
-    </footer>
+  <br><br><br><br><br>
+  <footer>
+    <p id="lastUpdated">This page was last updated on: <span id="date"></span></p>
+    <script>
+      // Get today's date in the desired format
+      const today = new Date();
+      const formattedDate = today.toLocaleDateString('en-US', { year: 'numeric', month: '2-digit', day: '2-digit' });
 
+      // Display the date in the designated span element
+      const dateElement = document.getElementById('date');
+      dateElement.textContent = formattedDate;
+    </script>
+  </footer>
+  <!-- There is an easter egg on one of the pages, go find it! -->
 </body>
 </html>

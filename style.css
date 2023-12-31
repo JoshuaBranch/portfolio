@@ -7,6 +7,7 @@ body{
     font-size: 18px;
     padding-left: 1%;
     padding-right: 1%;
+    padding-top: 1%;
 }
 hr{
     border-width: 5px;
@@ -19,8 +20,18 @@ nav {
     background-color: #464646;
     padding: 10px;
     border-radius: 10px;
+    position: sticky;
+    top: 0; 
+    width: 100%;
+    z-index: 100;
   }
-  
+  .sticky {
+    position: fixed; /* Use fixed positioning for the fallback */
+    top: 0;
+    left: 0;
+  }
+
+
   nav ul {
     list-style: none;
     margin: 0;
@@ -58,8 +69,8 @@ nav {
 }
 
 .Joshua-Headshot{
-    width: 150%;
-    height: 150%;
+    width: 450px;
+    height: 450px;
     border-radius: 10%;
     border-style: solid;
     border-color: rgb(255, 255, 255);
@@ -67,7 +78,7 @@ nav {
 .small-about{
    font-size: 30px;
    padding-right: 5%;
-   padding-left: 14%;
+   padding-left: 1%;
 }
 .MAB-Text{
     font-size: 50px;
@@ -81,12 +92,16 @@ nav {
 }
 
 .Logo_YT{
-    width: 10%;
-    height: 10%;
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    margin-left: 1%;
+    border-style: solid;
+    border-color: white;
 }
 .Logo_X{
-    width: 7%;
-    height: 7%;
+    width: 100px;
+    height: 100px;
     border-radius: 15px;
     margin-left: 1%;
     border-style: solid;
@@ -100,12 +115,13 @@ nav {
   }
 
 .YT_Link{
-  color: white;
+  color: red;
 }
 table {
   margin-bottom: 20px; /* Adjust this value to control the gap size */
   border-collapse: separate; /* Ensures spacing between cells */
   border-spacing: 10px; /* Adds spacing between cells */
+  display: flex;
 }
 .MyFavVids{
   text-decoration: underline;
@@ -117,5 +133,85 @@ table {
   text-align: center;
 }
 .white-links{
+  color: white;
+}
+
+/* Main styles for larger screens */
+.About_Table {
+  display: flex;
+  align-items: center; /* Vertically align image and text */
+}
+
+.TH_JB_HS {
+  flex: 0 0 10%; /* Adjust width as needed */
+}
+
+.small-about {
+  flex: 1; /* Take remaining space */
+}
+
+/* Media query styles for smaller screens (unchanged) */
+@media (max-width: 768px) {
+  .About_Table {
+    flex-direction: column;
+  }
+
+  .TH_JB_HS {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .Dream_Cars {
+    flex-direction: column;
+  }
+
+  .TH_JB_HS {
+    width: 100%;
+  }
+}
+.car-name{
+  font-size: 30px;
+  padding-right: 5%;
+  padding-left: 1%;
+}
+.Average-Price{
+  font-size: 25px;
+  padding-right: 5%;
+  padding-left: 4%;
+  color: green;
+}
+.Bugatti-Image{
+width: 50%;
+height: 50%;
+padding-left: 15px;
+}
+.Lamborghini-Revuelto-Image{
+  width: 50%;
+  height: 50%;
+  padding-left: 15px;
+}
+.Lamborghini-Huracan-Tecnica-Image{
+  width: 50%;
+  height: 50%;
+  padding-left: 15px;
+}
+.Rolls-Royce-Phantom-Image{
+  width: 50%;
+  height: 50%;
+  padding-left: 15px;
+}
+.McLaren-765LT-Image{
+  width: 50%;
+  height: 50%;
+  padding-left: 15px;
+}
+
+.easter-egg-link{
+  text-decoration: none;
+  color: white;
+}
+
+.contact-me-link{
   color: white;
 }
