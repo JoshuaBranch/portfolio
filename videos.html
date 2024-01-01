@@ -10,14 +10,27 @@
 </head>
 <body>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">About Me</a></li>
-      <li  class="active"><a href="videos.html">Videos</a></li>
-      <li><a href="projects.html">J's Projects</a></li>
-      <li><a href="contact.html">Contact Me</a></li>
-    </ul>
-  </nav>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">About Me</a></li>
+        <li class="active"><a href="videos.html">Videos</a></li>
+        <li><a href="projects.html">J's Projects</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+       </ul>
+    </nav>
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <ul class="mobile-menu">
+        <li><a href="index.html">About Me</a></li>
+        <li class="burger-active"><a href="videos.html">Videos</a></li>
+        <li><a href="projects.html">J's Projects</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </div>
+  </header>
 
   <h1 class="Projects_Heading">Videos from the YouTube Channel</h1>
     <p>I have a YouTube channel where I post some videos on topics which if enjoy or find interesting. This mainly includes technology videos, however I am also interested in expanding to business videos, fitness, and possibly <a href="dreamcars.html" class="easter-egg-link">cars.</a>
@@ -30,52 +43,46 @@
   <p>You can find all and my most recent videos here: <a href="https://www.youtube.com/@JoshuaBranch" target="_blank" class="YT_Link">https://www.youtube.com/@JoshuaBranch</a> </p>
   <br>
   <h2 class="MyFavVids">My Favorite Videos</h2>
-  <table>
-    <tr>
-      <th>#1: Desktop Setup Tour 2023 Edition</th>
-      <th>#2: Should You Buy Adobe?</th>
-    </tr>
-    <tr>
-      <td>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/L2Pkk4_LQ-M?si=QQ-xXN-wuyEJX7dg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </td>
-      <td>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/MR0Kv3yVu_k?si=I9JImAysW8K8Mply" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
-      </td>
-    </tr>
-  </table>
+
+  
+  <div class="video-container">
+    <div class="video-item">
+      <h2 class="video-header">#1: Desktop Setup Tour 2023 Edition</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/L2Pkk4_LQ-M?si=QQ-xXN-wuyEJX7dg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="video-item">
+      <h2 class="video-header">#2: Should You Buy Adobe?</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/MR0Kv3yVu_k?si=I9JImAysW8K8Mply" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div>
 
   <br>
 
   <h2 class="OtherPerFav">Other Personal Favorites</h2>
-  <table>
-    <tr>
-      <th>This Is Why Chromebooks Are Awful</th>
-      <th>Which AI is Best?</th>
-    </tr>
-    <tr>
-      <td>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/y64O5gb1M1M?si=q90eJahnFkuZkei0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </td>
-      <td>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/jxghQzjllqo?si=FmgY3qzRwF3Pusr7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </td>
-    </tr>
-  </table>
-  <table>
-    <tr>
-      <th>Short Term M2 MacBook Pro Review</th>
-      <th>Samsung Galaxy Watch 6 Unboxing and Setup</th>
-    </tr>
-    <tr>
-      <td>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/z5VWHTJcKXk?si=JIxDwlOlmsdrxLBy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </td>
-      <td>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/IPpDSbXSapc?si=UeoXXXoNtxpsiYQv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </td>
-    </tr>
-  </table>
+
+  <div class="video-container">
+    <div class="video-item">
+      <h2 class="video-header">This Is Why Chromebooks Are Awful</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/y64O5gb1M1M?si=q90eJahnFkuZkei0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="video-item">
+      <h2 class="video-header">Which AI is Best?</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/jxghQzjllqo?si=FmgY3qzRwF3Pusr7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="video-container">
+    <div class="video-item">
+      <h2 class="video-header">Short Term M2 MacBook Pro Review</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/z5VWHTJcKXk?si=JIxDwlOlmsdrxLBy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="video-item">
+      <h2 class="video-header">Samsung Galaxy Watch 6 Unboxing and Setup</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/IPpDSbXSapc?si=UeoXXXoNtxpsiYQv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div>
+
+
 
   <hr>
   <section class="social-links">
@@ -105,5 +112,6 @@
     </script>
   </footer>
   <!-- There is an easter egg on one of the pages, go find it! -->
+  <script src="index.js"></script>
 </body>
 </html>

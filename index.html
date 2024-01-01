@@ -10,14 +10,35 @@
     
 </head>
 <body>
-  <nav>
-    <ul>
-      <li class="active"><a href="index.html">About Me</a></li>
-      <li><a href="videos.html">Videos</a></li>
-      <li><a href="projects.html">J's Projects</a></li>
-      <li><a href="contact.html">Contact Me</a></li>
-     </ul>
-  </nav>
+
+
+  <header>
+    <nav>
+      <ul>
+        <li class="active"><a href="index.html">About Me</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="projects.html">J's Projects</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+       </ul>
+    </nav>
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <ul class="mobile-menu">
+        <li class="burger-active"><a href="index.html">About Me</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="projects.html">J's Projects</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+
+
+
+
 
   <h1>
     <p class="AJB">About Joshua Branch</p>
@@ -27,7 +48,7 @@
       <img src="Images/HeadShot.png" alt="Joshua_Headshot" class="Joshua-Headshot">
     </div>
     <div class="small-about">
-      <p>Hello, I am an 19 year old college freshman majoring in business. I live in the United States, but l would love to move up north. Some of my interests are food, cleaning, finance, and the most important one, technology. </p>
+      <p>Hello, I am an 19 year old college freshman majoring in business. Some of my interests are food, cleaning, finance, and the most important one, technology. </p>
     </div>
   </div>
     
@@ -67,5 +88,6 @@
     </script>
   </footer>
   <!-- There is an easter egg on one of the pages, go find it! -->
+  <script src="index.js"></script>
 </body>
 </html>

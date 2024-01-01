@@ -10,15 +10,29 @@
 </head>
 <body>        
 
-  <nav>
-    <ul>
-      <li><a href="index.html">About Me</a></li>
-      <li><a href="videos.html">Videos</a></li>
-      <li><a href="projects.html">J's Projects</a></li>
-      <li><a href="contact.html">Contact Me</a></li>
-      <li class="active"><a href="dreamcars.html">Dream Cars</a></li>
-    </ul>
-  </nav>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="projects.html">J's Projects</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+        <li class="active"><a href="dreamcars.html">Dream Cars</a></li>
+       </ul>
+    </nav>
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <ul class="mobile-menu">
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="projects.html">J's Projects</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+        <li class="burger-active"><a href="dreamcars.html">Dream Cars</a></li>
+      </ul>
+    </div>
+  </header>
 
     <h1>Looks like you found the easter egg. Don't know how you found it, but you did.</h1>
 
@@ -114,5 +128,6 @@
         </script>
     </footer>
 <!-- You cheated if you are looking here. -->
+  <script src="index.js"></script>
 </body>
 </html> 

@@ -10,14 +10,27 @@
 </head>
 <body>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">About Me</a></li>
-      <li><a href="videos.html">Videos</a></li>
-      <li class="active"><a href="projects.html">J's Projects</a></li>
-      <li><a href="contact.html">Contact Me</a></li>
-    </ul>
-  </nav>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li class="active"><a href="projects.html">J's Projects</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+       </ul>
+    </nav>
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <ul class="mobile-menu">
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li class="burger-active"><a href="projects.html">J's Projects</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </div>
+  </header>
 
   <h1 class="Projects_Heading">Joshua's Projects</h1>
     <p>Here is a page dedicated the some of the projects that I created. These will be from High school all the way to current times. Most of the projects will be on my GitHub page where you can see all of them I have uploaded. This page is mainly dedicated to the main projects that I have done and I'm currently working on.
@@ -33,7 +46,7 @@
     <br><br>
 
     <h2>Game Maker Projects</h2>
-    <p>This is a place where I put my different games I created on Game Maker. When I created these games, there were diffent rules I had to follow such as, there must be 2 playable levels, the characters must be animated, there hase to be a win/lose condition, etc... 
+    <p>This is a place where I put my different games I created on Game Maker. When I created these games, there were different rules I had to follow such as, there must be 2 playable levels, the characters must be animated, there hase to be a win/lose condition, etc... 
     </p>
     <p>What's game maker?</p>
     <p>GameMaker is a series of cross-platform game engines created by Mark Overmars in 1999 and developed by YoYo Games since 2007. [Wikipedia]
@@ -81,5 +94,6 @@
     </script>
   </footer>
 <!-- There is an easter egg on one of the pages, go find it! -->
+  <script src="index.js"></script>
 </body>
 </html>

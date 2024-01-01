@@ -9,58 +9,142 @@ body{
     padding-right: 1%;
     padding-top: 1%;
 }
-hr{
-    border-width: 5px;
-    border-color: rgb(255, 255, 255);
+
+
+
+header a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0 20px;
+  background-color: #3d3d3d;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul li{
+  color: black;
+}
+
+
+header nav a {
+  font-size: 20px;
+  line-height: 1.5;
 }
 
 
 
-nav {
-    background-color: #464646;
-    padding: 10px;
-    border-radius: 10px;
-    position: sticky;
-    top: 0; 
-    width: 100%;
-    z-index: 100;
-  }
-  .sticky {
-    position: fixed; /* Use fixed positioning for the fallback */
-    top: 0;
-    left: 0;
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 5px 10px;
+}
+
+nav a:hover {
+  background-color: #fefefe;
+  border-radius: 10px;
+  color: black;
+}
+
+.active a {
+  background-color: #000000;
+  color: #fff;
+  border-radius: 10px;
+}
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+.mobile-menu li a {
+  margin-bottom: 10px;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  header nav {
+    display: none;
   }
 
+  #hamburger-icon {
+    display: block;
+  }
+}
 
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #ffffff;
-    padding: 5px 10px;
-  }
-  
-  nav a:hover {
-    background-color: #fefefe;
-    border-radius: 10px;
-    color: black;
-  }
-  
-  .active a {
-    background-color: #000000;
-    color: #fff;
-    border-radius: 10px;
-  }
-  
+.active a {
+  background-color: #000000;
+  color: #fff;
+  border-radius: 10px;
+}
+
+body .mobile-menu {
+  background-color: #2e2e2e;
+  transition: background-color 0.2s ease-in-out;
+  z-index: 9999;
+  color: black;
+}
+
+
+.burger-active a {
+  background-color: #000000;
+  color: #000000;
+  border-radius: 3px;
+  transition: background-color 0.2s ease-in-out;
+}
 
 .AJB{
     font-size: 55px;
@@ -75,18 +159,22 @@ nav {
     border-style: solid;
     border-color: rgb(255, 255, 255);
 }
+
 .small-about{
    font-size: 30px;
    padding-right: 5%;
    padding-left: 1%;
 }
+
 .MAB-Text{
     font-size: 50px;
 }
+
 .large-about{
     font-size: 25px;
     padding-right: 5%;
 }
+
 .SL{
     font-size: 50px;
 }
@@ -99,6 +187,7 @@ nav {
     border-style: solid;
     border-color: white;
 }
+
 .Logo_X{
     width: 100px;
     height: 100px;
@@ -111,46 +200,49 @@ nav {
 .button-container {
     display: inline-block;
     text-align: center;
-    margin: 0 10px; /* Adjust margin for desired spacing */
+    margin: 0 10px;
   }
 
 .YT_Link{
   color: red;
 }
+
 table {
-  margin-bottom: 20px; /* Adjust this value to control the gap size */
-  border-collapse: separate; /* Ensures spacing between cells */
-  border-spacing: 10px; /* Adds spacing between cells */
+  margin-bottom: 20px;
+  border-collapse: separate;
+  border-spacing: 10px;
   display: flex;
 }
+
 .MyFavVids{
   text-decoration: underline;
 }
+
 .OtherPerFav{
   text-decoration: underline;
 }
+
 .centered-iframe {
   text-align: center;
 }
+
 .white-links{
   color: white;
 }
 
-/* Main styles for larger screens */
 .About_Table {
   display: flex;
-  align-items: center; /* Vertically align image and text */
+  align-items: center;
 }
 
 .TH_JB_HS {
-  flex: 0 0 10%; /* Adjust width as needed */
+  flex: 0 0 10%;
 }
 
 .small-about {
-  flex: 1; /* Take remaining space */
+  flex: 1;
 }
 
-/* Media query styles for smaller screens (unchanged) */
 @media (max-width: 768px) {
   .About_Table {
     flex-direction: column;
@@ -184,27 +276,27 @@ table {
 .Bugatti-Image{
 width: 50%;
 height: 50%;
-padding-left: 15px;
+border-radius: 10px;
 }
 .Lamborghini-Revuelto-Image{
   width: 50%;
   height: 50%;
-  padding-left: 15px;
+  border-radius: 10px;
 }
 .Lamborghini-Huracan-Tecnica-Image{
   width: 50%;
   height: 50%;
-  padding-left: 15px;
+  border-radius: 10px;
 }
 .Rolls-Royce-Phantom-Image{
   width: 50%;
   height: 50%;
-  padding-left: 15px;
+  border-radius: 10px;
 }
 .McLaren-765LT-Image{
   width: 50%;
   height: 50%;
-  padding-left: 15px;
+  border-radius: 10px;
 }
 
 .easter-egg-link{
@@ -214,4 +306,31 @@ padding-left: 15px;
 
 .contact-me-link{
   color: white;
+}
+
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.video-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+.video-header {
+  margin: 0 auto;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.video-item iframe {
+  flex: 1 1 auto;
+}
+
+@media (max-width: 768px) {
+  .video-item iframe {
+    max-width: 100%;
+  }
 }
